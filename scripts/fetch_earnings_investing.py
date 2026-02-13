@@ -255,7 +255,7 @@ def scrape_economic(scraper, date_from: str, date_to: str) -> pd.DataFrame:
     host = _env_str("INVESTING_LANG_HOST", "es.investing.com")
     tz = _env_str("INVESTING_TIMEZONE", "80")
     econ_countries = _env_list_int("ECON_COUNTRIES", "5,26,72")
-    econ_importance = _env_list_int("ECON_IMPORTANCE", "2,3")
+    econ_importance = _env_list_int("ECON_IMPORTANCE", "3")
 
     base_url = f"https://{host}/economic-calendar/"
     url = f"https://{host}/economic-calendar/Service/getCalendarFilteredData"
