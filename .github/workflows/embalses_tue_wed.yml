@@ -26,7 +26,7 @@ jobs:
 
       - name: Run embalses job
         run: |
-          python scripts/embalses_job.py
+          python scripts/embalses_dict.py
 
       # Opcional: subir el JSON como artifact del run (para descargarlo/verlo)
       - name: Upload artifact
