@@ -1,0 +1,44 @@
+name: Publish Investing Earnings -> GitHub Pages
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 06:15 UTC ~ 07:15 Madrid (invierno). Ajusta si quieres.
+    - cron: "40 11 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run scraper
+        env:
+          # Cambia estos 3 según tus filtros
+          INVESTING_LANG_HOST: "es.investing.com"
+          INVESTING_COUNTRIES: "26"
+          INVESTING_IMPORTANCE: "3"
+          INVESTING_TIMEZONE: "80"
+        run: |
+          python scripts/fetch_earnings_investing.py
+
+      - name: Publish docs/ to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          force_orphan: true
