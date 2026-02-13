@@ -158,7 +158,7 @@ def main():
     # Ventana dinámica: hoy .. hoy+7
     today = date.today()
     date_from = _env_str("DATE_FROM", today.isoformat())
-    date_to = _env_str("DATE_TO", (today + timedelta(days=7)).isoformat())
+    date_to = _env_str("DATE_TO", (today + timedelta(days=15)).isoformat())
 
     df = scrape_earnings(date_from, date_to)
 

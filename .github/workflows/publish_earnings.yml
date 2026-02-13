@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # 06:15 UTC ~ 07:15 Madrid (invierno). Ajusta si quieres.
-    - cron: "50 11 * * *"
+    - cron: "10 12 * * *"
 
 permissions:
   contents: write
