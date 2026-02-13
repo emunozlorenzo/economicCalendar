@@ -3,9 +3,8 @@ name: Publish Investing Earnings -> GitHub Pages
 on:
   workflow_dispatch:
   schedule:
-    # 06:15 UTC ~ 07:15 Madrid (invierno). Ajusta si quieres.
-    - cron: "25 12 * * *"
-    - cron: "25 11 * * *"
+    - cron: "25 6 * * 0"  # domingos 06:25 UTC (07:25 Madrid en invierno)
+    - cron: "25 5 * * 0"  # domingos 05:25 UTC (07:25 Madrid en verano)
 
 permissions:
   contents: write

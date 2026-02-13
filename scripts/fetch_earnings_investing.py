@@ -154,11 +154,26 @@ def scrape_earnings(date_from: str, date_to: str) -> pd.DataFrame:
 
     return temp[["Día", "Evento2"]]
 
+def next_monday_and_friday(base: date) -> tuple[date, date]:
+    """
+    Devuelve (lunes_siguiente, viernes_siguiente) relativo a base.
+    - Si base es domingo -> lunes es mañana.
+    - Si base es lunes -> lunes es hoy (puedes cambiarlo si quieres que sea el de la semana siguiente).
+    """
+    days_to_monday = (0 - base.weekday()) % 7  # Monday=0 ... Sunday=6
+    start = base + timedelta(days=days_to_monday)
+    end = start + timedelta(days=4)  # viernes
+    return start, end
+
 def main():
-    # Ventana dinámica: hoy .. hoy+7
-    today = date.today()
-    date_from = _env_str("DATE_FROM", today.isoformat())
-    date_to = _env_str("DATE_TO", (today + timedelta(days=15)).isoformat())
+    # "hoy" en horario Madrid (runner suele ir en UTC)
+    today_madrid = datetime.now(ZoneInfo("Europe/Madrid")).date()
+
+    # Ventana: lunes->viernes (se puede sobreescribir por env si quieres)
+    default_from, default_to = next_monday_and_friday(today_madrid)
+
+    date_from = _env_str("DATE_FROM", default_from.isoformat())
+    date_to = _env_str("DATE_TO", default_to.isoformat())
 
     df = scrape_earnings(date_from, date_to)
 
