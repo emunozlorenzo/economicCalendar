@@ -1,5 +1,6 @@
 import os
 import json
+import re
 import pandas as pd
 import cloudscraper
 from bs4 import BeautifulSoup
@@ -14,12 +15,25 @@ def _env_list_int(name: str, default_csv: str) -> list[int]:
     raw = os.environ.get(name, default_csv).strip()
     if not raw:
         return []
-    out = []
+    out: list[int] = []
     for part in raw.split(","):
         part = part.strip()
         if part.isdigit():
             out.append(int(part))
     return out
+
+# --- Stopwords / limpieza ---
+stopwords_es = {
+    "de", "del", "la", "las", "el", "los", "y", "a", "en", "que",
+    "un", "una", "por", "con", "para", "se", "al", "lo", "su", "tras",
+    "pero", "son", "etc"
+}
+
+def remove_stopwords_from_event(text: str, stopwords=stopwords_es) -> str:
+    """Elimina stopwords sencillas de una cadena de texto."""
+    tokens = text.split()
+    tokens_filtrados = [t for t in tokens if t.lower() not in stopwords]
+    return " ".join(tokens_filtrados)
 
 # --- Fecha española (simple) ---
 MONTHS_ES = {
@@ -36,23 +50,98 @@ def parse_spanish_date(s: str) -> str:
     try:
         txt = s.lower().replace(",", " ").replace(".", " ").strip()
         parts = [p for p in txt.split() if p]
+
         day = None
         month = None
+
         for p in parts:
             if p.isdigit():
                 day = int(p)
                 break
+
         for p in parts:
             if p in MONTHS_ES:
                 month = MONTHS_ES[p]
                 break
+
         if day and month:
             y = date.today().year
             return date(y, month, day).isoformat()
     except Exception:
         pass
+
     return s
 
+# --- Aglutinado económico ---
+def extraer_base_y_parens(evento: str) -> tuple[str, list[str]]:
+    """
+    Separa el texto principal de los paréntesis.
+    Retorna (base, [paréntesis]).
+    """
+    parens = re.findall(r"\((.*?)\)", evento)
+    base = re.sub(r"\(.*?\)", "", evento).strip()
+    return base, parens
+
+def aglutinar_eventos_por_dia(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Espera DF con columnas ['Día','Evento2'] y devuelve DF aglutinado:
+    - Agrupa por (Día, base) fusionando paréntesis
+    - Normaliza paréntesis (Anual->YoY, etc.)
+    - Limpia con remove_stopwords_from_event
+    """
+    if df.empty:
+        return pd.DataFrame(columns=["Día", "Evento2"])
+
+    agrupado: dict[tuple[str, str], set[str]] = {}
+
+    for _, row in df.iterrows():
+        dia = str(row.get("Día", "")).strip()
+        evento = str(row.get("Evento2", "")).strip()
+        if not dia or not evento:
+            continue
+
+        base, parens = extraer_base_y_parens(evento)
+        clave = (dia, base)
+        if clave not in agrupado:
+            agrupado[clave] = set()
+
+        # Puede venir un paréntesis con varios tokens: "(Anual/1T)" etc.
+        for p in parens:
+            for token in re.split(r"[/,;]\s*", p.strip()):
+                t = token.strip()
+                if t:
+                    agrupado[clave].add(t)
+
+    reemplazos_parens = {
+        "Anual": "YoY",
+        "Trimestral": "QoQ",
+        "Mensual": "MoM",
+        "1T": "Q1",
+        "2T": "Q2",
+        "3T": "Q3",
+        "4T": "Q4",
+    }
+
+    filas_nuevas = []
+    for (dia, base), conjunto_parens in agrupado.items():
+        lista_parens = sorted(conjunto_parens)
+        lista_parens = [reemplazos_parens.get(elem, elem) for elem in lista_parens]
+
+        if lista_parens:
+            evento_final = f"{base} ({'/'.join(lista_parens)})"
+        else:
+            evento_final = base
+
+        evento_final_limpio = remove_stopwords_from_event(evento_final)
+        filas_nuevas.append({"Día": dia, "Evento2": evento_final_limpio})
+
+    out = pd.DataFrame(filas_nuevas)
+    if out.empty:
+        return pd.DataFrame(columns=["Día", "Evento2"])
+
+    return out.sort_values(["Día", "Evento2"]).reset_index(drop=True)
+
+# --- Scrapers ---
 def scrape_earnings(scraper, date_from: str, date_to: str) -> pd.DataFrame:
     """
     Devuelve DataFrame con columnas: Día (YYYY-MM-DD) y Evento2 (p.ej. "ES Resultado EmpresaX")
@@ -97,7 +186,6 @@ def scrape_earnings(scraper, date_from: str, date_to: str) -> pd.DataFrame:
     # POST datos
     r = scraper.post(url, headers=headers, data=payload, timeout=60)
     if r.status_code != 200:
-        # no rompemos todo el pipeline; devolvemos vacío
         return pd.DataFrame(columns=["Día", "Evento2"])
 
     data = r.json()
@@ -151,13 +239,12 @@ def scrape_earnings(scraper, date_from: str, date_to: str) -> pd.DataFrame:
     )
     temp["Evento2"] = temp["País2"] + " Resultado " + temp["Empresa"]
 
-    return temp[["Día", "Evento2"]]
+    return temp[["Día", "Evento2"]].drop_duplicates().reset_index(drop=True)
 
-# --- Calendario económico ---
 def scrape_economic(scraper, date_from: str, date_to: str) -> pd.DataFrame:
     """
     Scrapear el calendario económico y retornar un DataFrame con columnas:
-    'Día' y 'Evento2' (ej.: "EU PIB de ... (YoY/Q1)").
+    'Día' y 'Evento2' (ej.: "EU PIB ... (YoY/Q1)").
 
     Configurable por env:
       INVESTING_LANG_HOST=es.investing.com
@@ -167,7 +254,7 @@ def scrape_economic(scraper, date_from: str, date_to: str) -> pd.DataFrame:
     """
     host = _env_str("INVESTING_LANG_HOST", "es.investing.com")
     tz = _env_str("INVESTING_TIMEZONE", "80")
-    econ_countries = _env_list_int("ECON_COUNTRIES", "5,26,72")     # p.ej. Eurozona/España/US (según vuestros ids)
+    econ_countries = _env_list_int("ECON_COUNTRIES", "5,26,72")
     econ_importance = _env_list_int("ECON_IMPORTANCE", "2,3")
 
     base_url = f"https://{host}/economic-calendar/"
@@ -215,14 +302,9 @@ def scrape_economic(scraper, date_from: str, date_to: str) -> pd.DataFrame:
         datetime_str = row.attrs.get("data-event-datetime", "")
         dia = datetime_str.split(" ")[0] if datetime_str else ""
 
-        # País
         pais_el = row.find("span", class_="ceFlags")
         pais = pais_el.get("title", "").strip() if pais_el else ""
 
-        # Importancia/impacto: a veces viene como bullish icons; si cambia, esto puede variar
-        impacto = len(row.find_all("i", class_="grayFullBullishIcon"))
-
-        # Nombre evento
         a_tag = row.find("a")
         evento = a_tag.get_text(strip=True) if a_tag else ""
 
@@ -232,7 +314,6 @@ def scrape_economic(scraper, date_from: str, date_to: str) -> pd.DataFrame:
         eventos.append({
             "Día": dia,
             "País": pais,
-            "Impacto": impacto,
             "Evento": evento,
         })
 
@@ -240,18 +321,21 @@ def scrape_economic(scraper, date_from: str, date_to: str) -> pd.DataFrame:
     if df.empty:
         return pd.DataFrame(columns=["Día", "Evento2"])
 
-    # Mantengo la misma lógica simple de país->prefijo que en earnings
-    df["País2"] = df["País"].apply(
+    temp = df.copy()
+    temp["País2"] = temp["País"].apply(
         lambda x: "ES" if x == "España" else ("EU" if x == "Eurozona" else "US")
     )
-    df["Evento2"] = df["País2"] + " " + df["Evento"]
 
-    # Si queréis filtrar por impacto (ejemplo: quedarte solo con 2-3)
-    # df = df[df["Impacto"].isin([2, 3])]
+    # Mantengo el nombre "Evento2" para compatibilidad con vuestra lógica
+    temp["Evento2"] = temp["País2"] + " " + temp["Evento"]
 
-    out = df[["Día", "Evento2"]].drop_duplicates().reset_index(drop=True)
+    out = temp[["Día", "Evento2"]].drop_duplicates().reset_index(drop=True)
+
+    # Aglutinado + limpieza final (lo que pedías)
+    out = aglutinar_eventos_por_dia(out)
     return out
 
+# --- Ventana lunes->viernes ---
 def next_monday_and_friday(base: date) -> tuple[date, date]:
     """
     Devuelve (lunes_siguiente, viernes_siguiente) relativo a base.
@@ -282,7 +366,7 @@ def main():
 
     df_all = pd.concat([df_econ, df_earn], ignore_index=True)
     df_all = df_all.dropna(subset=["Día", "Evento2"])
-    df_all = df_all.sort_values(["Día", "Evento2"]).reset_index(drop=True)
+    df_all = df_all.drop_duplicates().sort_values(["Día", "Evento2"]).reset_index(drop=True)
 
     os.makedirs("docs", exist_ok=True)
     df_all.to_csv("docs/calendar.csv", index=False)
@@ -297,5 +381,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
