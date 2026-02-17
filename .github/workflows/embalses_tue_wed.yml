@@ -3,12 +3,12 @@ name: Publish Embalses -> GitHub Pages
 on:
   workflow_dispatch:
   schedule:
-    # Martes y miércoles a las 07:00 UTC
-    - cron: "0 7 * * 2,3"
+    # Martes y miércoles a las 05:00 UTC
+    - cron: "0 5 * * 2,3"
 
 permissions:
   contents: write
-
+z
 jobs:
   build:
     runs-on: ubuntu-latest
