@@ -32,13 +32,11 @@ jobs:
         run: |
           python scripts/embalses_dict.py
 
-      # Publicamos a Pages desde docs/
-      - name: Prepare docs/
+      - name: Refresh docs/embalses
         run: |
           mkdir -p docs/embalses
-          cp data/embalses.json docs/embalses/embalses.json
-
-          # (Opcional) evita problemas de Jekyll y permite servir json tal cual
+          rm -rf docs/embalses/*
+          cp -f data/embalses.json docs/embalses/embalses.json
           touch docs/.nojekyll
 
       - name: Publish docs/ to gh-pages (keep existing files)

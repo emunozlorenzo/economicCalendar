@@ -28,18 +28,26 @@ jobs:
 
       - name: Run scraper
         env:
-          # Cambia estos 3 según tus filtros
           INVESTING_LANG_HOST: "es.investing.com"
           INVESTING_COUNTRIES: "26"
           INVESTING_IMPORTANCE: "3"
           INVESTING_TIMEZONE: "80"
         run: |
           python scripts/fetch_earnings_investing.py
-          # asegúrate de escribir en docs/investing
-          # o si hoy escribe en docs/, muévelo:
+
+      - name: Refresh docs/investing
+        run: |
+          # Cambia estas 2 rutas si tu script escribe en otro sitio
+          SRC_CSV="data/calendar.csv"
+          SRC_JSON="data/calendar.json"
+
           mkdir -p docs/investing
-          # mv docs/* docs/investing/   # OJO: esto movería también embalses si estuviera en el repo
-          # mejor: mueve solo los ficheros concretos que genera tu script
+          rm -rf docs/investing/*
+
+          cp -f "$SRC_CSV"  docs/investing/calendar.csv
+          cp -f "$SRC_JSON" docs/investing/calendar.json
+
+          touch docs/.nojekyll
 
       - name: Publish docs/ to gh-pages (keep existing files)
         uses: peaceiris/actions-gh-pages@v4
