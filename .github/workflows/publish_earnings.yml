@@ -35,10 +35,15 @@ jobs:
           INVESTING_TIMEZONE: "80"
         run: |
           python scripts/fetch_earnings_investing.py
+          # asegúrate de escribir en docs/investing
+          # o si hoy escribe en docs/, muévelo:
+          mkdir -p docs/investing
+          # mv docs/* docs/investing/   # OJO: esto movería también embalses si estuviera en el repo
+          # mejor: mueve solo los ficheros concretos que genera tu script
 
-      - name: Publish docs/ to gh-pages
+      - name: Publish docs/ to gh-pages (keep existing files)
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
-          force_orphan: true
+          keep_files: true

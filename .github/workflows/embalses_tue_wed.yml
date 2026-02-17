@@ -35,15 +35,15 @@ jobs:
       # Publicamos a Pages desde docs/
       - name: Prepare docs/
         run: |
-          mkdir -p docs
-          cp data/embalses.json docs/embalses.json
+          mkdir -p docs/embalses
+          cp data/embalses.json docs/embalses/embalses.json
 
           # (Opcional) evita problemas de Jekyll y permite servir json tal cual
           touch docs/.nojekyll
 
-      - name: Publish docs/ to gh-pages
+      - name: Publish docs/ to gh-pages (keep existing files)
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
-          force_orphan: true
+          keep_files: true
