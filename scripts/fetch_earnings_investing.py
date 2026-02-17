@@ -337,23 +337,34 @@ def scrape_economic(scraper, date_from: str, date_to: str) -> pd.DataFrame:
     return out
 
 # --- Ventana lunes->viernes ---
-def next_monday_and_friday(base: date) -> tuple[date, date]:
-    """
-    Devuelve (lunes_siguiente, viernes_siguiente) relativo a base.
-    - Si base es domingo -> lunes es mañana.
-    - Si base es lunes -> lunes es hoy.
-    """
-    days_to_monday = (0 - base.weekday()) % 7  # Monday=0 ... Sunday=6
-    start = base + timedelta(days=days_to_monday)
-    end = start + timedelta(days=4)  # viernes
+from datetime import date, timedelta
+
+def monday_to_friday(base: date, when: str = "current"):
+    # base.weekday(): lunes=0 ... domingo=6
+
+    # 1) calculo el lunes de la semana en la que está "base"
+    start = base - timedelta(days=base.weekday())
+
+    # 2) si quieren la semana siguiente, sumo 7 días
+    if when == "next":
+        start = start + timedelta(days=7)
+    elif when == "current":
+        pass  # me quedo con la semana actual
+    else:
+        raise ValueError("when debe ser 'current' o 'next'")
+
+    # 3) viernes = lunes + 4 días
+    end = start + timedelta(days=4)
+
     return start, end
+
 
 def main():
     # "hoy" en horario Madrid (runner suele ir en UTC)
     today_madrid = datetime.now(ZoneInfo("Europe/Madrid")).date()
 
     # Ventana: lunes->viernes (se puede sobreescribir por env si quieres)
-    default_from, default_to = next_monday_and_friday(today_madrid)
+    default_from, default_to = monday_to_friday(today_madrid,"current")
     date_from = _env_str("DATE_FROM", default_from.isoformat())
     date_to = _env_str("DATE_TO", default_to.isoformat())
 
