@@ -1,94 +1,54 @@
 [
   {
-    "Día": "2026-02-24",
-    "Evento2": "ES Resultado Endesa"
+    "Día": "2026-02-17",
+    "Evento2": "ES Resultado Enagás"
   },
   {
-    "Día": "2026-02-25",
-    "Evento2": "ES Resultado ACS"
+    "Día": "2026-02-18",
+    "Evento2": "ES Resultado Naturgy Energy"
   },
   {
-    "Día": "2026-02-25",
-    "Evento2": "ES Resultado Aena"
+    "Día": "2026-02-19",
+    "Evento2": "ES Resultado Repsol"
   },
   {
-    "Día": "2026-02-25",
-    "Evento2": "ES Resultado Ferrovial"
+    "Día": "2026/02/18",
+    "Evento2": "US Actas reunión FOMC"
   },
   {
-    "Día": "2026-02-25",
-    "Evento2": "ES Resultado Iberdrola"
+    "Día": "2026/02/19",
+    "Evento2": "US Inventarios petróleo crudo AIE"
   },
   {
-    "Día": "2026-02-25",
-    "Evento2": "ES Resultado Telefónica"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Acciona"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Colonial"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Fluidra"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Grifols"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Indra"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Puig Brands"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Sacyr"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Solaria"
-  },
-  {
-    "Día": "2026-02-27",
-    "Evento2": "ES Resultado Acerinox"
-  },
-  {
-    "Día": "2026-02-27",
-    "Evento2": "ES Resultado Amadeus"
-  },
-  {
-    "Día": "2026-02-27",
-    "Evento2": "ES Resultado IAG"
-  },
-  {
-    "Día": "2026-02-27",
-    "Evento2": "ES Resultado Merlin Properties"
-  },
-  {
-    "Día": "2026/02/24",
-    "Evento2": "US Confianza consumidor The Conference Board (Feb)"
-  },
-  {
-    "Día": "2026/02/25",
-    "Evento2": "EU IPC zona euro (YoY/Ene)"
-  },
-  {
-    "Día": "2026/02/26",
+    "Día": "2026/02/19",
     "Evento2": "US Nuevas peticiones subsidio desempleo"
   },
   {
-    "Día": "2026/02/27",
-    "Evento2": "ES IPC España (YoY/Feb/MoM)"
+    "Día": "2026/02/19",
+    "Evento2": "US Índice manufacturero Fed Filadelfia (Feb)"
   },
   {
-    "Día": "2026/02/27",
-    "Evento2": "US IPP (Ene/MoM)"
+    "Día": "2026/02/20",
+    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
+  },
+  {
+    "Día": "2026/02/20",
+    "Evento2": "US PIB (Q4/QoQ)"
+  },
+  {
+    "Día": "2026/02/20",
+    "Evento2": "US PMI manufacturero (Feb)"
+  },
+  {
+    "Día": "2026/02/20",
+    "Evento2": "US PMI servicios (Feb)"
+  },
+  {
+    "Día": "2026/02/20",
+    "Evento2": "US Precios gasto consumo personal subyacente (YoY/Dic/MoM)"
+  },
+  {
+    "Día": "2026/02/20",
+    "Evento2": "US Ventas viviendas nuevas (Dic)"
   }
 ]
