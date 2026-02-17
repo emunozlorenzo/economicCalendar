@@ -27,19 +27,38 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run scraper
+        working-directory: ${{ github.workspace }}
         env:
           INVESTING_LANG_HOST: "es.investing.com"
           INVESTING_COUNTRIES: "26"
           INVESTING_IMPORTANCE: "3"
           INVESTING_TIMEZONE: "80"
         run: |
+          set -euo pipefail
           python scripts/fetch_earnings_investing.py
 
+          echo "---- DEBUG ----"
+          echo "PWD: $(pwd)"
+          echo "Workspace: $GITHUB_WORKSPACE"
+          echo "Contenido raíz:"
+          ls -la
+          echo "Contenido data/:"
+          ls -la data || true
+
+          test -f data/calendar.csv
+          test -f data/calendar.json
+
       - name: Refresh docs/investing
+        working-directory: ${{ github.workspace }}
         run: |
-          # Cambia estas 2 rutas si tu script escribe en otro sitio
+          set -euo pipefail
+
           SRC_CSV="data/calendar.csv"
           SRC_JSON="data/calendar.json"
+
+          # Checks con error claro
+          test -f "$SRC_CSV" || { echo "No existe $SRC_CSV"; ls -la; ls -la data || true; exit 1; }
+          test -f "$SRC_JSON" || { echo "No existe $SRC_JSON"; ls -la; ls -la data || true; exit 1; }
 
           mkdir -p docs/investing
           rm -rf docs/investing/*

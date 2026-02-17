@@ -6,6 +6,7 @@ import cloudscraper
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta, date
 from zoneinfo import ZoneInfo
+from pathlib import Path
 
 # --- Helpers env ---
 def _env_str(name: str, default: str) -> str:
@@ -331,7 +332,7 @@ def scrape_economic(scraper, date_from: str, date_to: str) -> pd.DataFrame:
 
     out = temp[["Día", "Evento2"]].drop_duplicates().reset_index(drop=True)
 
-    # Aglutinado + limpieza final (lo que pedías)
+    # Aglutinado + limpieza final
     out = aglutinar_eventos_por_dia(out)
     return out
 
@@ -368,15 +369,22 @@ def main():
     df_all = df_all.dropna(subset=["Día", "Evento2"])
     df_all = df_all.drop_duplicates().sort_values(["Día", "Evento2"]).reset_index(drop=True)
 
-    os.makedirs("docs", exist_ok=True)
-    df_all.to_csv("docs/calendar.csv", index=False)
+    # Escribe SIEMPRE relativo a la raíz del repo (no al CWD)
+    repo_root = Path(__file__).resolve().parents[1]  # .../scripts/ -> repo root
+    out_dir = repo_root / "data"
+    out_dir.mkdir(parents=True, exist_ok=True)
 
-    with open("docs/calendar.json", "w", encoding="utf-8") as f:
+    csv_path = out_dir / "calendar.csv"
+    json_path = out_dir / "calendar.json"
+
+    df_all.to_csv(csv_path, index=False)
+
+    with open(json_path, "w", encoding="utf-8") as f:
         json.dump(df_all.to_dict(orient="records"), f, ensure_ascii=False, indent=2)
 
     print(
         f"OK -> {len(df_all)} filas (econ={len(df_econ)}, earn={len(df_earn)}). "
-        "docs/calendar.json y docs/calendar.csv generados."
+        f"{json_path} y {csv_path} generados."
     )
 
 if __name__ == "__main__":
