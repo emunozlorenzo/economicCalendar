@@ -1,130 +1,78 @@
 [
   {
-    "Día": "2026-02-24",
-    "Evento2": "ES Resultado Endesa"
+    "Día": "2026/03/02",
+    "Evento2": "ES PMI manufacturero España (Feb)"
   },
   {
-    "Día": "2026-02-24",
-    "Evento2": "ES Resultado Telefónica"
-  },
-  {
-    "Día": "2026-02-25",
-    "Evento2": "ES Resultado ACS"
-  },
-  {
-    "Día": "2026-02-25",
-    "Evento2": "ES Resultado Aena"
-  },
-  {
-    "Día": "2026-02-25",
-    "Evento2": "ES Resultado Ferrovial"
-  },
-  {
-    "Día": "2026-02-25",
-    "Evento2": "ES Resultado Iberdrola"
-  },
-  {
-    "Día": "2026-02-25",
-    "Evento2": "ES Resultado Rovi"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Acciona"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Colonial"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Corporacion Acciona Energias Renovables"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Fluidra"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Grifols"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Indra"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Redeia Corporacion"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Sacyr"
-  },
-  {
-    "Día": "2026-02-26",
-    "Evento2": "ES Resultado Solaria"
-  },
-  {
-    "Día": "2026-02-27",
-    "Evento2": "ES Resultado Acerinox"
-  },
-  {
-    "Día": "2026-02-27",
-    "Evento2": "ES Resultado Amadeus"
-  },
-  {
-    "Día": "2026-02-27",
-    "Evento2": "ES Resultado Cellnex Telecom"
-  },
-  {
-    "Día": "2026-02-27",
-    "Evento2": "ES Resultado IAG"
-  },
-  {
-    "Día": "2026-02-27",
-    "Evento2": "ES Resultado Merlin Properties"
-  },
-  {
-    "Día": "2026/02/23",
+    "Día": "2026/03/02",
     "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
   },
   {
-    "Día": "2026/02/24",
-    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
+    "Día": "2026/03/02",
+    "Evento2": "US PMI manufacturero (Feb)"
   },
   {
-    "Día": "2026/02/24",
-    "Evento2": "US Confianza consumidor The Conference Board (Feb)"
+    "Día": "2026/03/02",
+    "Evento2": "US PMI manufacturero ISM (Feb)"
   },
   {
-    "Día": "2026/02/25",
-    "Evento2": "EU IPC zona euro (YoY/Ene)"
+    "Día": "2026/03/03",
+    "Evento2": "ES Variación desempleo España (Feb)"
   },
   {
-    "Día": "2026/02/25",
-    "Evento2": "US Declaraciones Trump, presidente EE.UU."
+    "Día": "2026/03/03",
+    "Evento2": "EU IPC zona euro (YoY/Feb)"
   },
   {
-    "Día": "2026/02/25",
+    "Día": "2026/03/04",
+    "Evento2": "ES PMI servicios España (Feb)"
+  },
+  {
+    "Día": "2026/03/04",
+    "Evento2": "US Cambio empleo no agrícola ADP (Feb)"
+  },
+  {
+    "Día": "2026/03/04",
     "Evento2": "US Inventarios petróleo crudo AIE"
   },
   {
-    "Día": "2026/02/26",
+    "Día": "2026/03/04",
+    "Evento2": "US PMI no manufacturero ISM (Feb)"
+  },
+  {
+    "Día": "2026/03/04",
+    "Evento2": "US PMI servicios (Feb)"
+  },
+  {
+    "Día": "2026/03/05",
     "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
   },
   {
-    "Día": "2026/02/26",
+    "Día": "2026/03/05",
     "Evento2": "US Nuevas peticiones subsidio desempleo"
   },
   {
-    "Día": "2026/02/27",
-    "Evento2": "ES IPC España (YoY/Feb/MoM)"
+    "Día": "2026/03/06",
+    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
   },
   {
-    "Día": "2026/02/27",
-    "Evento2": "ES IPC subyacente (YoY/Feb)"
+    "Día": "2026/03/06",
+    "Evento2": "US Ingresos medios hora (Feb/MoM)"
   },
   {
-    "Día": "2026/02/27",
-    "Evento2": "US IPP (Ene/MoM)"
+    "Día": "2026/03/06",
+    "Evento2": "US Nóminas no agrícolas (Feb)"
+  },
+  {
+    "Día": "2026/03/06",
+    "Evento2": "US Tasa desempleo (Feb)"
+  },
+  {
+    "Día": "2026/03/06",
+    "Evento2": "US Ventas minoristas (Ene/MoM)"
+  },
+  {
+    "Día": "2026/03/06",
+    "Evento2": "US Ventas minoristas subyacentes (Ene/MoM)"
   }
 ]
