@@ -1,78 +1,50 @@
 [
   {
-    "Día": "2026/03/02",
-    "Evento2": "ES PMI manufacturero España (Feb)"
+    "Día": "2026-03-11",
+    "Evento2": "ES Resultado Inditex"
   },
   {
-    "Día": "2026/03/02",
-    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
+    "Día": "2026/03/10",
+    "Evento2": "US Ventas viviendas segunda mano (Feb)"
   },
   {
-    "Día": "2026/03/02",
-    "Evento2": "US PMI manufacturero (Feb)"
+    "Día": "2026/03/11",
+    "Evento2": "ES Ventas minoristas España (YoY/Ene)"
   },
   {
-    "Día": "2026/03/02",
-    "Evento2": "US PMI manufacturero ISM (Feb)"
+    "Día": "2026/03/11",
+    "Evento2": "US IPC (YoY/Feb/MoM)"
   },
   {
-    "Día": "2026/03/03",
-    "Evento2": "ES Variación desempleo España (Feb)"
+    "Día": "2026/03/11",
+    "Evento2": "US IPC subyacente (Feb/MoM)"
   },
   {
-    "Día": "2026/03/03",
-    "Evento2": "EU IPC zona euro (YoY/Feb)"
-  },
-  {
-    "Día": "2026/03/04",
-    "Evento2": "ES PMI servicios España (Feb)"
-  },
-  {
-    "Día": "2026/03/04",
-    "Evento2": "US Cambio empleo no agrícola ADP (Feb)"
-  },
-  {
-    "Día": "2026/03/04",
+    "Día": "2026/03/11",
     "Evento2": "US Inventarios petróleo crudo AIE"
   },
   {
-    "Día": "2026/03/04",
-    "Evento2": "US PMI no manufacturero ISM (Feb)"
-  },
-  {
-    "Día": "2026/03/04",
-    "Evento2": "US PMI servicios (Feb)"
-  },
-  {
-    "Día": "2026/03/05",
-    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
-  },
-  {
-    "Día": "2026/03/05",
+    "Día": "2026/03/12",
     "Evento2": "US Nuevas peticiones subsidio desempleo"
   },
   {
-    "Día": "2026/03/06",
-    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
+    "Día": "2026/03/13",
+    "Evento2": "ES IPC España (YoY/Feb/MoM)"
   },
   {
-    "Día": "2026/03/06",
-    "Evento2": "US Ingresos medios hora (Feb/MoM)"
+    "Día": "2026/03/13",
+    "Evento2": "ES IPC subyacente (YoY/Feb)"
   },
   {
-    "Día": "2026/03/06",
-    "Evento2": "US Nóminas no agrícolas (Feb)"
+    "Día": "2026/03/13",
+    "Evento2": "US Encuesta JOLTS ofertas empleo (Ene)"
   },
   {
-    "Día": "2026/03/06",
-    "Evento2": "US Tasa desempleo (Feb)"
+    "Día": "2026/03/13",
+    "Evento2": "US PIB (Q3/QoQ)"
   },
   {
-    "Día": "2026/03/06",
-    "Evento2": "US Ventas minoristas (Ene/MoM)"
-  },
-  {
-    "Día": "2026/03/06",
-    "Evento2": "US Ventas minoristas subyacentes (Ene/MoM)"
+    "Día": "2026/03/13",
+    "Evento2": "US Precios gasto consumo personal subyacente (YoY/Ene/MoM)"
   }
 ]
