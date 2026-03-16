@@ -1,50 +1,54 @@
 [
   {
-    "Día": "2026-03-11",
-    "Evento2": "ES Resultado Inditex"
+    "Día": "2026/03/18",
+    "Evento2": "EU IPC zona euro (YoY/Feb)"
   },
   {
-    "Día": "2026/03/10",
-    "Evento2": "US Ventas viviendas segunda mano (Feb)"
+    "Día": "2026/03/18",
+    "Evento2": "US Comunicado FOMC"
   },
   {
-    "Día": "2026/03/11",
-    "Evento2": "ES Ventas minoristas España (YoY/Ene)"
+    "Día": "2026/03/18",
+    "Evento2": "US Decisión tipos interés"
   },
   {
-    "Día": "2026/03/11",
-    "Evento2": "US IPC (YoY/Feb/MoM)"
+    "Día": "2026/03/18",
+    "Evento2": "US IPP (Feb/MoM)"
   },
   {
-    "Día": "2026/03/11",
-    "Evento2": "US IPC subyacente (Feb/MoM)"
-  },
-  {
-    "Día": "2026/03/11",
+    "Día": "2026/03/18",
     "Evento2": "US Inventarios petróleo crudo AIE"
   },
   {
-    "Día": "2026/03/12",
+    "Día": "2026/03/18",
+    "Evento2": "US Proyecciones económicas FOMC"
+  },
+  {
+    "Día": "2026/03/18",
+    "Evento2": "US Rueda prensa FOMC"
+  },
+  {
+    "Día": "2026/03/19",
+    "Evento2": "EU Decisión BCE sobre tipos interés (Mar)"
+  },
+  {
+    "Día": "2026/03/19",
+    "Evento2": "EU Rueda prensa BCE"
+  },
+  {
+    "Día": "2026/03/19",
+    "Evento2": "EU Tipo facilidad depósito (Mar)"
+  },
+  {
+    "Día": "2026/03/19",
     "Evento2": "US Nuevas peticiones subsidio desempleo"
   },
   {
-    "Día": "2026/03/13",
-    "Evento2": "ES IPC España (YoY/Feb/MoM)"
+    "Día": "2026/03/19",
+    "Evento2": "US Ventas viviendas nuevas (Ene)"
   },
   {
-    "Día": "2026/03/13",
-    "Evento2": "ES IPC subyacente (YoY/Feb)"
-  },
-  {
-    "Día": "2026/03/13",
-    "Evento2": "US Encuesta JOLTS ofertas empleo (Ene)"
-  },
-  {
-    "Día": "2026/03/13",
-    "Evento2": "US PIB (Q3/QoQ)"
-  },
-  {
-    "Día": "2026/03/13",
-    "Evento2": "US Precios gasto consumo personal subyacente (YoY/Ene/MoM)"
+    "Día": "2026/03/19",
+    "Evento2": "US Índice manufacturero Fed Filadelfia (Mar)"
   }
 ]
