@@ -1,54 +1,34 @@
 [
   {
-    "Día": "2026/03/18",
-    "Evento2": "EU IPC zona euro (YoY/Feb)"
+    "Día": "2026/03/24",
+    "Evento2": "US PMI manufacturero (Mar)"
   },
   {
-    "Día": "2026/03/18",
-    "Evento2": "US Comunicado FOMC"
+    "Día": "2026/03/24",
+    "Evento2": "US PMI servicios (Mar)"
   },
   {
-    "Día": "2026/03/18",
-    "Evento2": "US Decisión tipos interés"
+    "Día": "2026/03/25",
+    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
   },
   {
-    "Día": "2026/03/18",
-    "Evento2": "US IPP (Feb/MoM)"
-  },
-  {
-    "Día": "2026/03/18",
+    "Día": "2026/03/25",
     "Evento2": "US Inventarios petróleo crudo AIE"
   },
   {
-    "Día": "2026/03/18",
-    "Evento2": "US Proyecciones económicas FOMC"
+    "Día": "2026/03/26",
+    "Evento2": "ES PIB España (Q4/YoY/QoQ)"
   },
   {
-    "Día": "2026/03/18",
-    "Evento2": "US Rueda prensa FOMC"
-  },
-  {
-    "Día": "2026/03/19",
-    "Evento2": "EU Decisión BCE sobre tipos interés (Mar)"
-  },
-  {
-    "Día": "2026/03/19",
-    "Evento2": "EU Rueda prensa BCE"
-  },
-  {
-    "Día": "2026/03/19",
-    "Evento2": "EU Tipo facilidad depósito (Mar)"
-  },
-  {
-    "Día": "2026/03/19",
+    "Día": "2026/03/26",
     "Evento2": "US Nuevas peticiones subsidio desempleo"
   },
   {
-    "Día": "2026/03/19",
-    "Evento2": "US Ventas viviendas nuevas (Ene)"
+    "Día": "2026/03/27",
+    "Evento2": "ES IPC España (YoY/Mar/MoM)"
   },
   {
-    "Día": "2026/03/19",
-    "Evento2": "US Índice manufacturero Fed Filadelfia (Mar)"
+    "Día": "2026/03/27",
+    "Evento2": "ES IPC subyacente (YoY/Mar)"
   }
 ]
