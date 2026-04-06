@@ -1,74 +1,42 @@
 [
   {
-    "Día": "2026/03/30",
-    "Evento2": "ES Ventas minoristas España (YoY/Feb)"
+    "Día": "2026/04/06",
+    "Evento2": "ES Variación desempleo España (Mar)"
   },
   {
-    "Día": "2026/03/30",
-    "Evento2": "US Declaraciones Powell, presidente Fed"
+    "Día": "2026/04/06",
+    "Evento2": "US PMI no manufacturero ISM (Mar)"
   },
   {
-    "Día": "2026/03/30",
-    "Evento2": "US Declaraciones Trump, presidente EE.UU."
+    "Día": "2026/04/07",
+    "Evento2": "ES PMI servicios España (Mar)"
   },
   {
-    "Día": "2026/03/31",
-    "Evento2": "EU IPC zona euro (YoY/Mar)"
+    "Día": "2026/04/08",
+    "Evento2": "US Actas reunión FOMC"
   },
   {
-    "Día": "2026/03/31",
-    "Evento2": "US Confianza consumidor The Conference Board (Mar)"
-  },
-  {
-    "Día": "2026/03/31",
-    "Evento2": "US Encuesta JOLTS ofertas empleo (Feb)"
-  },
-  {
-    "Día": "2026/04/01",
-    "Evento2": "ES PMI manufacturero España (Mar)"
-  },
-  {
-    "Día": "2026/04/01",
-    "Evento2": "US Cambio empleo no agrícola ADP (Mar)"
-  },
-  {
-    "Día": "2026/04/01",
+    "Día": "2026/04/08",
     "Evento2": "US Inventarios petróleo crudo AIE"
   },
   {
-    "Día": "2026/04/01",
-    "Evento2": "US PMI manufacturero (Mar)"
-  },
-  {
-    "Día": "2026/04/01",
-    "Evento2": "US PMI manufacturero ISM (Mar)"
-  },
-  {
-    "Día": "2026/04/01",
-    "Evento2": "US Ventas minoristas (Feb/MoM)"
-  },
-  {
-    "Día": "2026/04/01",
-    "Evento2": "US Ventas minoristas subyacentes (Feb/MoM)"
-  },
-  {
-    "Día": "2026/04/02",
+    "Día": "2026/04/09",
     "Evento2": "US Nuevas peticiones subsidio desempleo"
   },
   {
-    "Día": "2026/04/03",
-    "Evento2": "US Ingresos medios hora (Mar/MoM)"
+    "Día": "2026/04/09",
+    "Evento2": "US PIB (Q4/QoQ)"
   },
   {
-    "Día": "2026/04/03",
-    "Evento2": "US Nóminas no agrícolas (Mar)"
+    "Día": "2026/04/09",
+    "Evento2": "US Precios gasto consumo personal subyacente (YoY/Feb/MoM)"
   },
   {
-    "Día": "2026/04/03",
-    "Evento2": "US PMI servicios (Mar)"
+    "Día": "2026/04/10",
+    "Evento2": "US IPC (YoY/Mar/MoM)"
   },
   {
-    "Día": "2026/04/03",
-    "Evento2": "US Tasa desempleo (Mar)"
+    "Día": "2026/04/10",
+    "Evento2": "US IPC subyacente (Mar/MoM)"
   }
 ]
