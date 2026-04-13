@@ -1,42 +1,46 @@
 [
   {
-    "Día": "2026/04/06",
-    "Evento2": "ES Variación desempleo España (Mar)"
+    "Día": "2026-04-13",
+    "Evento2": "ES Resultado Puig Brands"
   },
   {
-    "Día": "2026/04/06",
-    "Evento2": "US PMI no manufacturero ISM (Mar)"
+    "Día": "2026/04/13",
+    "Evento2": "US Ventas viviendas segunda mano (Mar)"
   },
   {
-    "Día": "2026/04/07",
-    "Evento2": "ES PMI servicios España (Mar)"
+    "Día": "2026/04/14",
+    "Evento2": "ES IPC España (YoY/Mar/MoM)"
   },
   {
-    "Día": "2026/04/08",
-    "Evento2": "US Actas reunión FOMC"
+    "Día": "2026/04/14",
+    "Evento2": "ES IPC subyacente (YoY/Mar)"
   },
   {
-    "Día": "2026/04/08",
+    "Día": "2026/04/14",
+    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
+  },
+  {
+    "Día": "2026/04/14",
+    "Evento2": "US IPP (Mar/MoM)"
+  },
+  {
+    "Día": "2026/04/15",
+    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
+  },
+  {
+    "Día": "2026/04/15",
     "Evento2": "US Inventarios petróleo crudo AIE"
   },
   {
-    "Día": "2026/04/09",
+    "Día": "2026/04/16",
+    "Evento2": "EU IPC zona euro (YoY/Mar)"
+  },
+  {
+    "Día": "2026/04/16",
     "Evento2": "US Nuevas peticiones subsidio desempleo"
   },
   {
-    "Día": "2026/04/09",
-    "Evento2": "US PIB (Q4/QoQ)"
-  },
-  {
-    "Día": "2026/04/09",
-    "Evento2": "US Precios gasto consumo personal subyacente (YoY/Feb/MoM)"
-  },
-  {
-    "Día": "2026/04/10",
-    "Evento2": "US IPC (YoY/Mar/MoM)"
-  },
-  {
-    "Día": "2026/04/10",
-    "Evento2": "US IPC subyacente (Mar/MoM)"
+    "Día": "2026/04/16",
+    "Evento2": "US Índice manufacturero Fed Filadelfia (Abr)"
   }
 ]
