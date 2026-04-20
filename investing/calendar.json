@@ -1,46 +1,46 @@
 [
   {
-    "Día": "2026-04-13",
-    "Evento2": "ES Resultado Puig Brands"
+    "Día": "2026-04-21",
+    "Evento2": "ES Resultado Enagás"
   },
   {
-    "Día": "2026/04/13",
-    "Evento2": "US Ventas viviendas segunda mano (Mar)"
+    "Día": "2026-04-23",
+    "Evento2": "ES Resultado Banco de Sabadell"
   },
   {
-    "Día": "2026/04/14",
-    "Evento2": "ES IPC España (YoY/Mar/MoM)"
+    "Día": "2026-04-23",
+    "Evento2": "ES Resultado Bankinter"
   },
   {
-    "Día": "2026/04/14",
-    "Evento2": "ES IPC subyacente (YoY/Mar)"
-  },
-  {
-    "Día": "2026/04/14",
+    "Día": "2026/04/20",
     "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
   },
   {
-    "Día": "2026/04/14",
-    "Evento2": "US IPP (Mar/MoM)"
+    "Día": "2026/04/21",
+    "Evento2": "US Ventas minoristas (Mar/MoM)"
   },
   {
-    "Día": "2026/04/15",
+    "Día": "2026/04/21",
+    "Evento2": "US Ventas minoristas subyacentes (Mar/MoM)"
+  },
+  {
+    "Día": "2026/04/22",
     "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
   },
   {
-    "Día": "2026/04/15",
+    "Día": "2026/04/22",
     "Evento2": "US Inventarios petróleo crudo AIE"
   },
   {
-    "Día": "2026/04/16",
-    "Evento2": "EU IPC zona euro (YoY/Mar)"
-  },
-  {
-    "Día": "2026/04/16",
+    "Día": "2026/04/23",
     "Evento2": "US Nuevas peticiones subsidio desempleo"
   },
   {
-    "Día": "2026/04/16",
-    "Evento2": "US Índice manufacturero Fed Filadelfia (Abr)"
+    "Día": "2026/04/23",
+    "Evento2": "US PMI manufacturero (Abr)"
+  },
+  {
+    "Día": "2026/04/23",
+    "Evento2": "US PMI servicios (Abr)"
   }
 ]
