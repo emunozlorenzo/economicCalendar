@@ -1,162 +1,102 @@
 [
   {
-    "Día": "2026-04-27",
+    "Día": "2026-05-04",
     "Evento2": "ES Resultado Banco de Sabadell"
   },
   {
-    "Día": "2026-04-28",
-    "Evento2": "ES Resultado Puig Brands"
+    "Día": "2026-05-05",
+    "Evento2": "ES Resultado Unicaja Banco"
   },
   {
-    "Día": "2026-04-29",
-    "Evento2": "ES Resultado Aena"
+    "Día": "2026-05-06",
+    "Evento2": "ES Resultado Acciona"
   },
   {
-    "Día": "2026-04-29",
-    "Evento2": "ES Resultado Cellnex Telecom"
+    "Día": "2026-05-06",
+    "Evento2": "ES Resultado Fluidra"
   },
   {
-    "Día": "2026-04-29",
-    "Evento2": "ES Resultado Endesa"
+    "Día": "2026-05-07",
+    "Evento2": "ES Resultado Corporacion Acciona Energias Renovables"
   },
   {
-    "Día": "2026-04-29",
-    "Evento2": "ES Resultado Iberdrola"
+    "Día": "2026-05-07",
+    "Evento2": "ES Resultado Ferrovial"
   },
   {
-    "Día": "2026-04-29",
-    "Evento2": "ES Resultado Indra"
-  },
-  {
-    "Día": "2026-04-29",
-    "Evento2": "ES Resultado Mapfre"
-  },
-  {
-    "Día": "2026-04-29",
-    "Evento2": "ES Resultado Naturgy Energy"
-  },
-  {
-    "Día": "2026-04-29",
-    "Evento2": "ES Resultado Redeia Corporacion"
-  },
-  {
-    "Día": "2026-04-29",
-    "Evento2": "ES Resultado Sacyr"
-  },
-  {
-    "Día": "2026-04-29",
-    "Evento2": "ES Resultado Santander"
-  },
-  {
-    "Día": "2026-04-30",
-    "Evento2": "ES Resultado ArcelorMittal"
-  },
-  {
-    "Día": "2026-04-30",
-    "Evento2": "ES Resultado BBVA"
-  },
-  {
-    "Día": "2026-04-30",
-    "Evento2": "ES Resultado CaixaBank"
-  },
-  {
-    "Día": "2026-04-30",
+    "Día": "2026-05-07",
     "Evento2": "ES Resultado Grifols"
   },
   {
-    "Día": "2026-04-30",
-    "Evento2": "ES Resultado Logista"
+    "Día": "2026-05-08",
+    "Evento2": "ES Resultado Acerinox"
   },
   {
-    "Día": "2026-04-30",
-    "Evento2": "ES Resultado Repsol"
+    "Día": "2026-05-08",
+    "Evento2": "ES Resultado Amadeus"
   },
   {
-    "Día": "2026/04/27",
-    "Evento2": "US Declaraciones Trump, presidente EE.UU."
+    "Día": "2026-05-08",
+    "Evento2": "ES Resultado IAG"
   },
   {
-    "Día": "2026/04/28",
-    "Evento2": "ES Tasa desempleo España (Q1)"
+    "Día": "2026/05/04",
+    "Evento2": "ES PMI manufacturero España (Abr)"
   },
   {
-    "Día": "2026/04/28",
-    "Evento2": "ES Ventas minoristas España (YoY/Mar)"
+    "Día": "2026/05/05",
+    "Evento2": "ES Variación desempleo España (Abr)"
   },
   {
-    "Día": "2026/04/28",
+    "Día": "2026/05/05",
     "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
   },
   {
-    "Día": "2026/04/28",
-    "Evento2": "US Confianza consumidor The Conference Board (Abr)"
+    "Día": "2026/05/05",
+    "Evento2": "US Encuesta JOLTS ofertas empleo (Mar)"
   },
   {
-    "Día": "2026/04/29",
-    "Evento2": "ES IPC España (Abr/YoY/MoM)"
+    "Día": "2026/05/05",
+    "Evento2": "US PMI no manufacturero ISM (Abr)"
   },
   {
-    "Día": "2026/04/29",
-    "Evento2": "ES IPC subyacente (Abr/YoY)"
+    "Día": "2026/05/05",
+    "Evento2": "US PMI servicios (Abr)"
   },
   {
-    "Día": "2026/04/29",
-    "Evento2": "US Comunicado FOMC"
+    "Día": "2026/05/05",
+    "Evento2": "US Ventas viviendas nuevas (Mar)"
   },
   {
-    "Día": "2026/04/29",
-    "Evento2": "US Decisión tipos interés"
+    "Día": "2026/05/06",
+    "Evento2": "ES PMI servicios España (Abr)"
   },
   {
-    "Día": "2026/04/29",
+    "Día": "2026/05/06",
+    "Evento2": "US Cambio empleo no agrícola ADP (Abr)"
+  },
+  {
+    "Día": "2026/05/06",
     "Evento2": "US Inventarios petróleo crudo AIE"
   },
   {
-    "Día": "2026/04/29",
-    "Evento2": "US Rueda prensa FOMC"
-  },
-  {
-    "Día": "2026/04/30",
-    "Evento2": "ES PIB España (Q1/YoY/QoQ)"
-  },
-  {
-    "Día": "2026/04/30",
-    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
-  },
-  {
-    "Día": "2026/04/30",
-    "Evento2": "EU Decisión BCE sobre tipos interés (Abr)"
-  },
-  {
-    "Día": "2026/04/30",
-    "Evento2": "EU IPC zona euro (Abr/YoY)"
-  },
-  {
-    "Día": "2026/04/30",
-    "Evento2": "EU Rueda prensa BCE"
-  },
-  {
-    "Día": "2026/04/30",
-    "Evento2": "EU Tipo facilidad depósito (Abr)"
-  },
-  {
-    "Día": "2026/04/30",
+    "Día": "2026/05/07",
     "Evento2": "US Nuevas peticiones subsidio desempleo"
   },
   {
-    "Día": "2026/04/30",
-    "Evento2": "US PIB (Q1/QoQ)"
+    "Día": "2026/05/08",
+    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
   },
   {
-    "Día": "2026/04/30",
-    "Evento2": "US Precios gasto consumo personal subyacente (YoY/Mar/MoM)"
+    "Día": "2026/05/08",
+    "Evento2": "US Ingresos medios hora (Abr/MoM)"
   },
   {
-    "Día": "2026/05/01",
-    "Evento2": "US PMI manufacturero (Abr)"
+    "Día": "2026/05/08",
+    "Evento2": "US Nóminas no agrícolas (Abr)"
   },
   {
-    "Día": "2026/05/01",
-    "Evento2": "US PMI manufacturero ISM (Abr)"
+    "Día": "2026/05/08",
+    "Evento2": "US Tasa desempleo (Abr)"
   }
 ]
