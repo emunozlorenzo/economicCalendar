@@ -1,102 +1,66 @@
 [
   {
-    "Día": "2026-05-04",
-    "Evento2": "ES Resultado Banco de Sabadell"
+    "Día": "2026-05-12",
+    "Evento2": "ES Resultado ACS"
   },
   {
-    "Día": "2026-05-05",
-    "Evento2": "ES Resultado Unicaja Banco"
+    "Día": "2026-05-14",
+    "Evento2": "ES Resultado Colonial"
   },
   {
-    "Día": "2026-05-06",
-    "Evento2": "ES Resultado Acciona"
+    "Día": "2026-05-14",
+    "Evento2": "ES Resultado Merlin Properties"
   },
   {
-    "Día": "2026-05-06",
-    "Evento2": "ES Resultado Fluidra"
+    "Día": "2026-05-14",
+    "Evento2": "ES Resultado Telefónica"
   },
   {
-    "Día": "2026-05-07",
-    "Evento2": "ES Resultado Corporacion Acciona Energias Renovables"
+    "Día": "2026/05/11",
+    "Evento2": "US Ventas viviendas segunda mano (Abr)"
   },
   {
-    "Día": "2026-05-07",
-    "Evento2": "ES Resultado Ferrovial"
+    "Día": "2026/05/12",
+    "Evento2": "US IPC (Abr/YoY/MoM)"
   },
   {
-    "Día": "2026-05-07",
-    "Evento2": "ES Resultado Grifols"
+    "Día": "2026/05/12",
+    "Evento2": "US IPC subyacente (Abr/MoM)"
   },
   {
-    "Día": "2026-05-08",
-    "Evento2": "ES Resultado Acerinox"
-  },
-  {
-    "Día": "2026-05-08",
-    "Evento2": "ES Resultado Amadeus"
-  },
-  {
-    "Día": "2026-05-08",
-    "Evento2": "ES Resultado IAG"
-  },
-  {
-    "Día": "2026/05/04",
-    "Evento2": "ES PMI manufacturero España (Abr)"
-  },
-  {
-    "Día": "2026/05/05",
-    "Evento2": "ES Variación desempleo España (Abr)"
-  },
-  {
-    "Día": "2026/05/05",
+    "Día": "2026/05/13",
     "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
   },
   {
-    "Día": "2026/05/05",
-    "Evento2": "US Encuesta JOLTS ofertas empleo (Mar)"
+    "Día": "2026/05/13",
+    "Evento2": "US IPP (Abr/MoM)"
   },
   {
-    "Día": "2026/05/05",
-    "Evento2": "US PMI no manufacturero ISM (Abr)"
-  },
-  {
-    "Día": "2026/05/05",
-    "Evento2": "US PMI servicios (Abr)"
-  },
-  {
-    "Día": "2026/05/05",
-    "Evento2": "US Ventas viviendas nuevas (Mar)"
-  },
-  {
-    "Día": "2026/05/06",
-    "Evento2": "ES PMI servicios España (Abr)"
-  },
-  {
-    "Día": "2026/05/06",
-    "Evento2": "US Cambio empleo no agrícola ADP (Abr)"
-  },
-  {
-    "Día": "2026/05/06",
+    "Día": "2026/05/13",
     "Evento2": "US Inventarios petróleo crudo AIE"
   },
   {
-    "Día": "2026/05/07",
-    "Evento2": "US Nuevas peticiones subsidio desempleo"
+    "Día": "2026/05/14",
+    "Evento2": "ES IPC España (Abr/YoY/MoM)"
   },
   {
-    "Día": "2026/05/08",
+    "Día": "2026/05/14",
+    "Evento2": "ES IPC subyacente (Abr/YoY)"
+  },
+  {
+    "Día": "2026/05/14",
     "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
   },
   {
-    "Día": "2026/05/08",
-    "Evento2": "US Ingresos medios hora (Abr/MoM)"
+    "Día": "2026/05/14",
+    "Evento2": "US Nuevas peticiones subsidio desempleo"
   },
   {
-    "Día": "2026/05/08",
-    "Evento2": "US Nóminas no agrícolas (Abr)"
+    "Día": "2026/05/14",
+    "Evento2": "US Ventas minoristas (Abr/MoM)"
   },
   {
-    "Día": "2026/05/08",
-    "Evento2": "US Tasa desempleo (Abr)"
+    "Día": "2026/05/14",
+    "Evento2": "US Ventas minoristas subyacentes (Abr/MoM)"
   }
 ]
