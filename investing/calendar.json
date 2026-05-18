@@ -1,66 +1,38 @@
 [
   {
-    "Día": "2026-05-12",
-    "Evento2": "ES Resultado ACS"
+    "Día": "2026-05-18",
+    "Evento2": "ES Resultado Solaria"
   },
   {
-    "Día": "2026-05-14",
-    "Evento2": "ES Resultado Colonial"
+    "Día": "2026/05/20",
+    "Evento2": "EU IPC zona euro (Abr/YoY)"
   },
   {
-    "Día": "2026-05-14",
-    "Evento2": "ES Resultado Merlin Properties"
+    "Día": "2026/05/20",
+    "Evento2": "US Actas reunión FOMC"
   },
   {
-    "Día": "2026-05-14",
-    "Evento2": "ES Resultado Telefónica"
-  },
-  {
-    "Día": "2026/05/11",
-    "Evento2": "US Ventas viviendas segunda mano (Abr)"
-  },
-  {
-    "Día": "2026/05/12",
-    "Evento2": "US IPC (Abr/YoY/MoM)"
-  },
-  {
-    "Día": "2026/05/12",
-    "Evento2": "US IPC subyacente (Abr/MoM)"
-  },
-  {
-    "Día": "2026/05/13",
-    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
-  },
-  {
-    "Día": "2026/05/13",
-    "Evento2": "US IPP (Abr/MoM)"
-  },
-  {
-    "Día": "2026/05/13",
+    "Día": "2026/05/20",
     "Evento2": "US Inventarios petróleo crudo AIE"
   },
   {
-    "Día": "2026/05/14",
-    "Evento2": "ES IPC España (Abr/YoY/MoM)"
-  },
-  {
-    "Día": "2026/05/14",
-    "Evento2": "ES IPC subyacente (Abr/YoY)"
-  },
-  {
-    "Día": "2026/05/14",
-    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
-  },
-  {
-    "Día": "2026/05/14",
+    "Día": "2026/05/21",
     "Evento2": "US Nuevas peticiones subsidio desempleo"
   },
   {
-    "Día": "2026/05/14",
-    "Evento2": "US Ventas minoristas (Abr/MoM)"
+    "Día": "2026/05/21",
+    "Evento2": "US PMI manufacturero (May)"
   },
   {
-    "Día": "2026/05/14",
-    "Evento2": "US Ventas minoristas subyacentes (Abr/MoM)"
+    "Día": "2026/05/21",
+    "Evento2": "US PMI servicios (May)"
+  },
+  {
+    "Día": "2026/05/21",
+    "Evento2": "US Índice manufacturero Fed Filadelfia (May)"
+  },
+  {
+    "Día": "2026/05/22",
+    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
   }
 ]
