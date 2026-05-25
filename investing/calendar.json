@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "Día": "2026/05/26",
+    "Evento2": "US Confianza consumidor The Conference Board (May)"
+  },
+  {
+    "Día": "2026/05/27",
+    "Evento2": "EU Rueda prensa BCE"
+  },
+  {
+    "Día": "2026/05/28",
+    "Evento2": "ES Ventas minoristas España (Abr/YoY)"
+  },
+  {
+    "Día": "2026/05/28",
+    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
+  },
+  {
+    "Día": "2026/05/28",
+    "Evento2": "US Inventarios petróleo crudo AIE"
+  },
+  {
+    "Día": "2026/05/28",
+    "Evento2": "US Nuevas peticiones subsidio desempleo"
+  },
+  {
+    "Día": "2026/05/28",
+    "Evento2": "US PIB (Q1/QoQ)"
+  },
+  {
+    "Día": "2026/05/28",
+    "Evento2": "US Precios gasto consumo personal subyacente (Abr/YoY/MoM)"
+  },
+  {
+    "Día": "2026/05/28",
+    "Evento2": "US Ventas viviendas nuevas (Abr)"
+  },
+  {
+    "Día": "2026/05/29",
+    "Evento2": "ES IPC España (YoY/May/MoM)"
+  },
+  {
+    "Día": "2026/05/29",
+    "Evento2": "ES IPC subyacente (YoY/May)"
+  }
+]
