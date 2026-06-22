@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "Día": "2026/06/22",
+    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
+  },
+  {
+    "Día": "2026/06/23",
+    "Evento2": "US PMI manufacturero (Jun)"
+  },
+  {
+    "Día": "2026/06/23",
+    "Evento2": "US PMI servicios (Jun)"
+  },
+  {
+    "Día": "2026/06/24",
+    "Evento2": "US Inventarios petróleo crudo AIE"
+  },
+  {
+    "Día": "2026/06/24",
+    "Evento2": "US Ventas viviendas nuevas (May)"
+  },
+  {
+    "Día": "2026/06/25",
+    "Evento2": "ES PIB España (Q1/YoY/QoQ)"
+  },
+  {
+    "Día": "2026/06/25",
+    "Evento2": "US Nuevas peticiones subsidio desempleo"
+  },
+  {
+    "Día": "2026/06/25",
+    "Evento2": "US PIB (Q1/QoQ)"
+  },
+  {
+    "Día": "2026/06/25",
+    "Evento2": "US Precios gasto consumo personal subyacente (YoY/May/MoM)"
+  }
+]
