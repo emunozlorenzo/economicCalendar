@@ -1,82 +1,30 @@
 [
   {
-    "Día": "2026/06/29",
-    "Evento2": "ES IPC España (YoY/Jun/MoM)"
-  },
-  {
-    "Día": "2026/06/29",
-    "Evento2": "ES IPC subyacente (YoY/Jun)"
-  },
-  {
-    "Día": "2026/06/29",
-    "Evento2": "ES Ventas minoristas España (YoY/May)"
-  },
-  {
-    "Día": "2026/06/29",
+    "Día": "2026/07/06",
     "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
   },
   {
-    "Día": "2026/06/30",
-    "Evento2": "US Confianza consumidor The Conference Board (Jun)"
+    "Día": "2026/07/06",
+    "Evento2": "US PMI no manufacturero ISM (Jun)"
   },
   {
-    "Día": "2026/06/30",
-    "Evento2": "US Encuesta JOLTS ofertas empleo (May)"
+    "Día": "2026/07/06",
+    "Evento2": "US PMI servicios (Jun)"
   },
   {
-    "Día": "2026/07/01",
-    "Evento2": "ES PMI manufacturero España (Jun)"
+    "Día": "2026/07/08",
+    "Evento2": "US Actas reunión FOMC"
   },
   {
-    "Día": "2026/07/01",
-    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
-  },
-  {
-    "Día": "2026/07/01",
-    "Evento2": "EU IPC zona euro (YoY/Jun)"
-  },
-  {
-    "Día": "2026/07/01",
-    "Evento2": "US Cambio empleo no agrícola ADP (Jun)"
-  },
-  {
-    "Día": "2026/07/01",
+    "Día": "2026/07/08",
     "Evento2": "US Inventarios petróleo crudo AIE"
   },
   {
-    "Día": "2026/07/01",
-    "Evento2": "US PMI manufacturero (Jun)"
-  },
-  {
-    "Día": "2026/07/01",
-    "Evento2": "US PMI manufacturero ISM (Jun)"
-  },
-  {
-    "Día": "2026/07/02",
-    "Evento2": "ES Variación desempleo España (Jun)"
-  },
-  {
-    "Día": "2026/07/02",
-    "Evento2": "US Ingresos medios hora (Jun/MoM)"
-  },
-  {
-    "Día": "2026/07/02",
+    "Día": "2026/07/09",
     "Evento2": "US Nuevas peticiones subsidio desempleo"
   },
   {
-    "Día": "2026/07/02",
-    "Evento2": "US Nóminas no agrícolas (Jun)"
-  },
-  {
-    "Día": "2026/07/02",
-    "Evento2": "US Tasa desempleo (Jun)"
-  },
-  {
-    "Día": "2026/07/03",
-    "Evento2": "ES PMI servicios España (Jun)"
-  },
-  {
-    "Día": "2026/07/03",
-    "Evento2": "EU Comparecencia Lagarde, presidenta BCE"
+    "Día": "2026/07/09",
+    "Evento2": "US Ventas viviendas segunda mano (Jun)"
   }
 ]
