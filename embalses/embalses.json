@@ -1,13 +1,13 @@
 {
   "AGUA_TOTAL": {
-    "campo": "2026-08-10",
-    "resultado1": 38103.0,
-    "resultado2": 67.99
+    "campo": "2026-08-17",
+    "resultado1": 37107.0,
+    "resultado2": 66.21
   },
   "VARIACION": {
     "campo": "Variación semana Anterior:",
-    "resultado1": -912.0,
-    "resultado2": -1.63
+    "resultado1": -997.0,
+    "resultado2": -1.78
   },
   "CAPACIDAD": {
     "campo": "Capacidad:",
@@ -16,12 +16,12 @@
   },
   "MISMA SEMANA(t-1)": {
     "campo": "Misma Semana (2025):",
-    "resultado1": 35789.0,
-    "resultado2": 63.86
+    "resultado1": 34734.0,
+    "resultado2": 61.98
   },
   "MISMA SEMANA (t-10)": {
     "campo": "Misma Semana (Med. 10 Años):",
-    "resultado1": 29287.0,
-    "resultado2": 52.26
+    "resultado1": 28487.0,
+    "resultado2": 50.83
   }
 }
