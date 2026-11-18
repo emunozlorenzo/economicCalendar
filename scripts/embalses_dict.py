@@ -93,12 +93,12 @@ def dict_agua_embalses(fail_silently: bool = True):
         raise RuntimeError("No se encontró resumen-semanal (posible bloqueo/HTML distinto).")
 
     lista = ["AGUA_TOTAL", "VARIACION", "CAPACIDAD", "MISMA SEMANA(t-1)", "MISMA SEMANA (t-10)"]
-    filas = seccion.find_all("div", class_="FilaSeccion")
+    filas = seccion.find_all("div", class_="FilaSeccion dato-principal")
     if not filas:
         if fail_silently:
-            print("[embalses] No se encontraron FilaSeccion.")
+            print("[embalses] No se encontraron FilaSeccion dato-principal.")
             return None
-        raise RuntimeError("No se encontraron FilaSeccion.")
+        raise RuntimeError("No se encontraron FilaSeccion dato-principal.")
 
     dict_agua = {}
 
