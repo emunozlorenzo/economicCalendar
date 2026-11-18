@@ -85,12 +85,12 @@ def dict_agua_embalses(fail_silently: bool = True):
     except Exception:
         soup = BeautifulSoup(r.content, "html.parser")
 
-    seccion = soup.find("div", class_="SeccionCentral")
+    seccion = soup.find("div", class_="resumen-semanal")
     if seccion is None:
         if fail_silently:
-            print("[embalses] No se encontró SeccionCentral (posible bloqueo/HTML distinto).")
+            print("[embalses] No se encontró resumen-semanal (posible bloqueo/HTML distinto).")
             return None
-        raise RuntimeError("No se encontró SeccionCentral (posible bloqueo/HTML distinto).")
+        raise RuntimeError("No se encontró resumen-semanal (posible bloqueo/HTML distinto).")
 
     lista = ["AGUA_TOTAL", "VARIACION", "CAPACIDAD", "MISMA SEMANA(t-1)", "MISMA SEMANA (t-10)"]
     filas = seccion.find_all("div", class_="FilaSeccion")
